@@ -29,6 +29,6 @@ int main()
         y=y+h*f(t,y);
         t=t+h;
         error = fabs(y - g(t));
-        fprintf(fp,"%.2f\t%lf\t%lf\t%lf\n",t,y,g(t), error);                     //Printing in the following order: t     Euler solution      Exact Solution
+        fprintf(fp,"%.2f\t%lf\t%lf\t%lf\n",t,y,g(t), error);                     //Printing in the following order: t     Euler solution      Exact Solution      Error
     } while(t<1.9);
 }
